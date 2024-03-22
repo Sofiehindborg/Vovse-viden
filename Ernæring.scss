@@ -1,0 +1,224 @@
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+
+
+#video{
+    margin: 0 0;
+    padding: 0 0;
+    video{
+        width:100%;
+        height:50vw;
+        margin-bottom: $page-break
+    }
+}
+
+
+section{
+    padding: 1.5rem $section-sides;
+    padding-bottom: $section-bottom
+    ;}
+
+
+
+
+#hunderacer{
+    margin:0 0;
+    .container{
+        position:relative;
+        text-align: center;
+    }
+
+    }
+
+    #hunderacer{
+        @include dark-page;
+        padding-top: 1.5rem;
+        padding-bottom:$section-bottom;
+
+    }
+    
+    
+        h2{
+            @include header2;
+            text-align: right;
+            margin-top: 2rem !important;
+    
+        }
+
+
+        h3{
+            @include header2;
+            font-size: 20px;
+            text-align: right;
+            margin-bottom: 1rem;    
+        }
+            
+
+        p{
+            text-align: left;
+        }
+
+
+
+        #bedsteven{
+            @include dark-page;
+            padding-top: 1.5rem;
+            padding-bottom:$section-bottom;
+        
+            .bedsteven_image{
+                height: 60vh;
+                width: calc(100%);
+                margin: 0 auto;
+                background-image: url("hundemad.jpg");
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            
+        
+            h2{
+                @include header2;
+                text-align: right;
+                margin-top: 2rem !important;
+        
+        
+            }
+            h3{
+                @include header2;
+                font-size: 20px;
+                text-align: right;
+                margin-bottom: 1rem;    }
+                
+            p{
+                text-align: left;
+            }
+        
+        }
+
+
+        #omos{
+            padding-top:1.5rem;
+            padding-bottom:$section-bottom;
+            
+          .omos_image{
+            height: 55vh;
+            width: calc(100%);
+            margin: 0 auto;
+            background-image: url("godbid.png");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+            h1{
+                @include header1;
+                text-align: center;
+            }
+        
+            p{
+                @include text;
+                text-align: left;
+            }
+        
+        }
+
+
+
+#sundhed{
+    margin:0 0;
+    .container{
+        position:relative;
+        text-align: center;
+    }
+
+    }
+
+    #sundhed{
+        @include dark-page;
+        padding-top: 1.5rem;
+        padding-bottom:$section-bottom;
+    
+        .sundhed_image{
+            height: 60vh;
+            width: calc(100%);
+            margin: 0 auto;
+            background-image: url("sundhed.png");
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        }
+        
+    
+        h2{
+            @include header2;
+            text-align: right;
+            margin-top: 2rem !important;
+    
+    
+        }
+
+        
+footer{
+
+    a{
+        text-decoration: none;
+        color: $text-colour2;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    section{
+        padding: 0 $section-sides;
+        
+    }
+        #nav_buttons{
+        padding: 0 0;
+        .grid_image{
+            height: 30vh;
+        }
+    }
+    
+    .text_1, .text_2{
+        display: none;
+    }
+    }
+    
+    
+    /*Desktop version*/
+    @media only screen and (min-width: 600px) {
+    section{
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+    
+    }
+    
+    .grid_image{
+        height: 35vh;
+    }
+    
+        .text1, .text2{
+            display: none;
+        }
+    
+        .text_1, .text_2{
+            display: flex;
+        }
+    }
+    
+    .text{
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        
+    }
+    
+    .main_grid{
+        display: grid;
+        grid-template-columns: 4.8fr 5.2fr;
+        }
+
+        

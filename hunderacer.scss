@@ -1,0 +1,278 @@
+
+@import 'scss/variables';
+@import 'scss/standard';
+
+
+
+
+#video{
+    margin: 0 0;
+    padding: 0 0;
+    video{
+        width:100%;
+        height:50vw;
+        margin-bottom: $page-break
+    }
+}
+    
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+
+}
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+
+}
+
+#hunderacer{
+    margin:0 0;
+    .container{
+        position:relative;
+        text-align: center;
+    }
+
+    }
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+
+}
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+}
+
+
+#break-line{
+    background-color: $washed_out;
+    height: $page-break;
+}
+
+
+#hyrde{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .hyrde_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("hyrde.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+}
+
+#jagt{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .jagt_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("jagt.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+
+}
+
+#arbejdshunde{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .arbejdshunde_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("arbejde.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+}
+
+
+#selskab{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .selskab_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("selskab.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+}
+
+#terrier{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .terrier_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("terrier.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+}
+
+#spids{
+    padding-top:1.5rem;
+    padding-bottom:$section-bottom;
+    
+  .spids_image{
+    height: 55vh;
+    width: calc(100%);
+    margin: 0 auto;
+    background-image: url("spids.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    h1{
+        @include header1;
+        text-align: center;
+    }
+
+    p{
+        @include text;
+        text-align: left;
+    }
+
+}
+
+footer{
+    @include light-footer;
+
+    a{
+        text-decoration: none;
+        color: $text-colour1;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    section{
+        padding: 0 $section-sides;
+        
+    }
+        #nav_buttons{
+        padding: 0 0;
+        .grid_image{
+            height: 30vh;
+        }
+    }
+    
+    .text_1, .text_2{
+        display: none;
+    }
+    }
+    
+    
+    /*Desktop version*/
+    @media only screen and (min-width: 600px) {
+    section{
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+    
+    }
+    
+    .grid_image{
+        height: 35vh;
+    }
+    
+    .button{
+        font-size: $desktop-button-size;
+    }
+       
+        .text1, .text2{
+            display: none;
+        }
+    
+        .text_1, .text_2{
+            display: flex;
+        }
+    }
+    
+    .text{
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+        
+    }
+    
+    .main_grid{
+        display: grid;
+        grid-template-columns: 4.8fr 5.2fr;
+        }
+
